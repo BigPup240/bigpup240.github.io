@@ -41,28 +41,27 @@
   <p>You are a Gryffindor. The red one that most people like</p>
 </div>
 
-<div class="w3-padding w3-white w3-display-container" id="result-div1" style="display: none;">
+<div class="w3-padding w3-white w3-display-container w3-center" id="result-div1" style="display: none;">
   <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
   <h2>Ravenclaw</h2>
-  <img src="./img/Ravenclaw.png">
+  <img src="./img/Ravenclaw.png" style="width: 25%;">
   <p>You are a Ravenclaw. The blue one that most people like</p>
 </div>
 
-<div class="w3-padding w3-white w3-display-container" id="result-div3" style="display: none;">
+<div class="w3-padding w3-white w3-display-container w3-center" id="result-div3" style="display: none;">
   <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
   <h2>Slytherin</h2>
-  <img src="./img/Slytherin.png">
-  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
-  with a metropolitan area of over 13 million inhabitants.</p>
+  <img src="./img/Slytherin.png" style="width: 25%;">
+  
   <p>Standing on the River Thames, London has been a major settlement for two millennia,
   its history going back to its founding by the Romans, who named it Londinium.</p>
   <p>By the way, you can add a close icon to all containers if you want the ability to hide them. Look to your right!</p>
 </div>
 
-<div class="w3-padding w3-white w3-display-container" id="result-div4" style="display: none;">
+<div class="w3-padding w3-white w3-display-container w3-center" id="result-div4" style="display: none;">
   <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
   <h2>Hufflepuff</h2>
-  <img src="./img/Hufflepuff.png">
+  <img src="./img/Hufflepuff.png" style="width: 25%;">
   <p>London is the capital city of England. It is the most populous city in the United Kingdom,
   with a metropolitan area of over 13 million inhabitants.</p>
   <p>Standing on the River Thames, London has been a major settlement for two millennia,
@@ -148,11 +147,12 @@ function calculateResults() {
     document.getElementById("result-div2").style.display = "block"
   }
   else if(sum>=13 && sum<=16){
-    document.getElementById("result-div2").style.display = "block"
+    document.getElementById("result-div3").style.display = "block"
   }
-  else{}
-    document.getElementById("result-div2").style.display = "block"
+  else{
+    document.getElementById("result-div4").style.display = "block"
   }
+}
 
 calculateResults();
 
