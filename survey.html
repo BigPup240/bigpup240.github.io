@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="W3.CSS%20Template_files/w3.css">
+<link rel="stylesheet" href="W3.CSS%20Template_files/w3-theme-black.css">
+<link rel="stylesheet" href="W3.CSS%20Template_files/font-awesome.css">
+</head><body>
+
+
+
+
+<!-- Header -->
+<style>
+  .parallax {
+    /* The image used */
+    background-image: url("file:///C:/Users/johnnyqi/Downloads/feature-image-every-MBTI-sorted-into-their-hogwarts-house.webp");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  </style>
+   <div class="centered w3-xxxlarge w3-text-white">Which House Are You In?</div>
+   
+  </div>
+
+  <!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display: none; width: 100%; font-size: 40px; padding-top: 10%;" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+</nav>
+  
+  <!-- Container element -->
+  <div>
+    <a class="w3-display-topleft"href="file:///C:/Users/johnnyqi/Desktop/Personal%20Project/index.html#p"> <img src="file:///C:/Users/johnnyqi/Downloads/3574480-200.png" width="50" height="50" > </a>
+    
+  </div>
+  <div class="parallax"></div>
+  
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div class="w3-center w3-card" style="width: 75%;margin: auto;">
+  
+  <form action="./result.html" method="GET">
+    
+    <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
+      <p>I feel at peace with myself most of the time.</p>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="1" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="2" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="3" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="4" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+    
+    </div>
+    <hr>
+
+    <br>
+    <form action="./result.html" method="GET">
+    
+      <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
+        <p>I feel at peace with myself most of the time.</p>
+        <div class="w3-col w3-container m3">
+          <input type="radio" id="html" name="param1" value="1" onclick="updateBar()">
+          <label for="html">Very Accurate</label> 
+        </div>
+        <div class="w3-col w3-container m3">
+          <input type="radio" id="html" name="param1" value="2" onclick="updateBar()">
+          <label for="html">Very Accurate</label>
+        </div>
+        <div class="w3-col w3-container m3">
+          <input type="radio" id="html" name="param1" value="3" onclick="updateBar()">
+          <label for="html">Very Accurate</label>
+        </div>
+        <div class="w3-col w3-container m3">
+          <input type="radio" id="html" name="param1" value="4" onclick="updateBar()">
+          <label for="html">Very Accurate</label>
+        </div>
+      
+      </div>
+      <hr>
+  
+      <br>
+      <input class="w3-button w3-theme w3-center" type="submit" value="SUBMIT">
+  </form> 
+
+  
+  <hr>
+
+  
+  
+</div>
+
+<hr>
+
+<h2 class="w3-center">Progress Bars</h2>
+<div class="w3-container">
+
+<div class="w3-light-gray">
+  <div id="myBar" class="w3-center w3-padding w3-theme" style="width:0%">0%</div>
+</div><br>
+<hr>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Footer</h3>
+  <p>Made with help from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    
+  </div>
+ 
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
+var numQuestions = document.getElementsByName("survey-question").length
+function updateBar() {
+  var barElem = document.getElementById("myBar");  
+  
+  var numAnswered = 0
+  for(var i=1; i<=numQuestions; i++) {
+    var radioElem = document.getElementsByName("param" + i)
+    console.log(radioElem)
+    for (var j = 0; j < radioElem.length; j++) {
+      if (radioElem[j].checked) {
+        numAnswered++;
+        break;
+      }
+    }
+  }
+  
+  barElem.style.width = numAnswered/numQuestions*100 + '%'; 
+  barElem.innerHTML = numAnswered/numQuestions*100  + '%';
+}
+
+</script>
+
+
+</body></html>
