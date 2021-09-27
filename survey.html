@@ -8,17 +8,26 @@
 <link rel="stylesheet" href="W3.CSS%20Template_files/font-awesome.css">
 </head><body>
 
-
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display: none; width: 100%; font-size: 40px; padding-top: 10%;" id="mySidebar">
+  <u><h3 class="w3-xlarge w3-text-theme">Side Navigation</h3></u>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: 80%;">Home<img src="./3574480-200.png" width="10%"></a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: 80%;">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: 80%;">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size: 80%;">Link 4</a>
+  <button class="w3-bar-item w3-button font-size: 80%" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+</nav>
 
 
 <!-- Header -->
 <style>
   .parallax {
     /* The image used */
-    background-image: url("./feature-image-every-MBTI-sorted-into-their-hogwarts-house.webp");
+    background-image: url("./hogwarts-houses.jpg");
+    opacity: 0.5;
   
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 190px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -28,14 +37,8 @@
     
   }
   
-  </style>
-   <div class="centered w3-xxxlarge w3-text-white">Which House Are You In?</div>
-   
-  </div>
-  <div class="w3-padding-32 centercool">
-    <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;"><a href="./index.html">Home</a></button>
-  </div>
-
+</style>
+  
   <!-- Side Navigation -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display: none; width: 100%; font-size: 40px; padding-top: 10%;" id="mySidebar">
   <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
@@ -49,15 +52,22 @@
   <!-- Container element -->
 
   <div class="parallax"></div>
+  <h1 class="centered" style="font-size:xx-large; font-weight:900;">Which Harry Potter House Are You In?</h1>
+</div>
+<div class="w3-padding-32 centercool">
+  <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;"><a href="./index.html">HOME</a></button>
+</div>
   
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<h2 class="w3-center">Progress Bar</h2>
+<div class="w3-container">
+
+<div class="w3-light-gray">
+  <div id="myBar" class="w3-center w3-padding w3-theme" style="width:0%">0%</div>
+</div><br>
 <hr>
+
 <div class="w3-center w3-card" style="width: 75%;margin: auto;">
   
   <form action="./result.html" method="GET">
@@ -65,7 +75,7 @@
     <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
       <p>I feel at peace with myself most of the time.</p>
       <div class="w3-col w3-container m3">
-        <input type="radio" id="html" name="param2" value="1" onclick="updateBar()">
+        <input type="radio" id="html" name="param1" value="1" onclick="updateBar()">
         <label for="html">Very Accurate</label>
       </div>
       <div class="w3-col w3-container m3">
@@ -109,50 +119,171 @@
       </div>
       <hr>
   
-      <br>  
-      <input class="w3-button w3-theme w3-center" type="submit" value="SUBMIT">
+      <br>
+      <form action="./result.html" method="GET">
+    
+        <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
+          <p>I feel at peace with myself most of the time.</p>
+          <div class="w3-col w3-container m3">
+            <input type="radio" id="html" name="param2" value="1" onclick="updateBar()">
+            <label for="html">Very Accurate</label>
+          </div>
+          <div class="w3-col w3-container m3">
+            <input type="radio" id="html" name="param2" value="2" onclick="updateBar()">
+            <label for="html">Very Accurate</label>
+          </div>
+          <div class="w3-col w3-container m3">
+            <input type="radio" id="html" name="param2" value="3" onclick="updateBar()">
+            <label for="html">Very Accurate</label>
+          </div>
+          <div class="w3-col w3-container m3">
+            <input type="radio" id="html" name="param2" value="4" onclick="updateBar()">
+            <label for="html">Very Accurate</label>
+          </div>
+        
+        </div>
+        <hr>
+    
+        <br>
+        <form action="./result.html" method="GET">
+    
+          <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
+            <p>I feel at peace with myself most of the time.</p>
+            <div class="w3-col w3-container m3">
+              <input type="radio" id="html" name="param2" value="1" onclick="updateBar()">
+              <label for="html">Very Accurate</label>
+            </div>
+            <div class="w3-col w3-container m3">
+              <input type="radio" id="html" name="param2" value="2" onclick="updateBar()">
+              <label for="html">Very Accurate</label>
+            </div>
+            <div class="w3-col w3-container m3">
+              <input type="radio" id="html" name="param2" value="3" onclick="updateBar()">
+              <label for="html">Very Accurate</label>
+            </div>
+            <div class="w3-col w3-container m3">
+              <input type="radio" id="html" name="param2" value="4" onclick="updateBar()">
+              <label for="html">Very Accurate</label>
+            </div>
+          
+          </div>
+          <hr>
+      
+          <br>
+          <form action="./result.html" method="GET">
+    
+            <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
+              <p>I feel at peace with myself most of the time.</p>
+              <div class="w3-col w3-container m3">
+                <input type="radio" id="html" name="param2" value="1" onclick="updateBar()">
+                <label for="html">Very Accurate</label>
+              </div>
+              <div class="w3-col w3-container m3">
+                <input type="radio" id="html" name="param2" value="2" onclick="updateBar()">
+                <label for="html">Very Accurate</label>
+              </div>
+              <div class="w3-col w3-container m3">
+                <input type="radio" id="html" name="param2" value="3" onclick="updateBar()">
+                <label for="html">Very Accurate</label>
+              </div>
+              <div class="w3-col w3-container m3">
+                <input type="radio" id="html" name="param2" value="4" onclick="updateBar()">
+                <label for="html">Very Accurate</label>
+              </div>
+            
+            </div>
+            <hr>
+        
+            <br>
+            <form action="./result.html" method="GET">
+    
+              <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
+                <p>I feel at peace with myself most of the time.</p>
+                <div class="w3-col w3-container m3">
+                  <input type="radio" id="html" name="param2" value="1" onclick="updateBar()">
+                  <label for="html">Very Accurate</label>
+                </div>
+                <div class="w3-col w3-container m3">
+                  <input type="radio" id="html" name="param2" value="2" onclick="updateBar()">
+                  <label for="html">Very Accurate</label>
+                </div>
+                <div class="w3-col w3-container m3">
+                  <input type="radio" id="html" name="param2" value="3" onclick="updateBar()">
+                  <label for="html">Very Accurate</label>
+                </div>
+                <div class="w3-col w3-container m3">
+                  <input type="radio" id="html" name="param2" value="4" onclick="updateBar()">
+                  <label for="html">Very Accurate</label>
+                </div>
+              
+              </div>
+              <hr>
+          
+              <br>
+            <form action="./result.html" method="GET">
+    
+    <div class="w3-row" name="survey-question" style="font-family:sans-serif, Helvetica; font-size:   large;"> 
+      <p>I feel at peace with myself most of the time.</p>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="1" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="2" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="3" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+      <div class="w3-col w3-container m3">
+        <input type="radio" id="html" name="param2" value="4" onclick="updateBar()">
+        <label for="html">Very Accurate</label>
+      </div>
+    
+    </div>
+    <hr>
+
+    <br>
+      <input onclick class="w3-button w3-theme w3-center" type="submit" value="SUBMIT">
   </form> 
 
-  
   <hr>
-
-  
   
 </div>
 
 <hr>
 
-<h2 class="w3-center">Progress Bars</h2>
-<div class="w3-container">
-
-<div class="w3-light-gray">
-  <div id="myBar" class="w3-center w3-padding w3-theme" style="width:0%">0%</div>
-</div><br>
-<hr>
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark w3-padding-16">
-  <h3>Footer</h3>
-  <p>Made with help from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
-    
-  </div>
+
+
+  <h3>Contact Information</h3>
+  <p>Email: hellothere@gmail.com</p>
+  <p>Phone: 778-903-2875</p>
+  <p style="font-size: x-small;">Copyright 2021 by The JQ Corporation. All Rights Reserved.</p>
+    <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+
+
+    </div>
+
+  </footer>
  
 
 <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
 <script>
 // Side navigation
 function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "100%";
-  x.style.fontSize = "40px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+      var x = document.getElementById("mySidebar");
+      x.style.width = "20%";
+      x.style.fontSize = "25px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
 
 // Accordions
 function myAccFunc(id) {
